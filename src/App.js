@@ -5,13 +5,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Hello from React</h2>
+    
+        <h2>Weather App</h2>
         
-      </header>
-    </div>
   );
 }
 
