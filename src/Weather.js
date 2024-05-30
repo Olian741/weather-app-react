@@ -1,7 +1,7 @@
 import React from "react";
 
-
 export default function Weather(){
+  return (
     <div className="weather-app">
       <header>
         <form>
@@ -11,7 +11,7 @@ export default function Weather(){
             required
             className="search-input"
           />
-          <input type="submit" value="Search" className="search-button" />
+          <input type="submit" value="search" className="search-button" />
         </form>
       </header>
       <main>
@@ -19,8 +19,8 @@ export default function Weather(){
           <div>
             <h1 className="current-city">Paris</h1>
             <p className="current-details">
-              <span></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span className="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind:<strong>7.2km/h</strong>
             </p>
           </div>
           <div className="current-temperature">
@@ -39,30 +39,21 @@ export default function Weather(){
             rel="noreferrer"
           >
             {" "}
-            Olian Mkhawana
-          </a>{" "}
-          and is
-          <a
-            href="https://github.com/Olian741/my-Shecodes-weather-project"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            on GitHub
-          </a>{" "}
-          and
-          <a
-            href="https://celadon-froyo-bf6924.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            hosted on Netlify
+            Olian Mkhawana on
           </a>
+          <a
+            a
+            href="https://github.com/Olian741/weather-app-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+           {" "} Github </a>{" "}
+          and
+          <a href="https://celadon-froyo-bf6924.netlify.app/"> hosted on Netlify</a>
         </p>
       </footer>
-    </div>;   
-
-
+    </div>
+  );
 }
 
        

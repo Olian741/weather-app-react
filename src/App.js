@@ -1,14 +1,12 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
 
-
-function App() {
+export default function App() {
   return (
-    
-        <h2>Weather App</h2>
-        
+    <div>
+      <h2 className="weather-app-app">Weather App</h2>
+    </div>
   );
 }
-
-export default App;
+       
