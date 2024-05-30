@@ -17,9 +17,7 @@ export default function Weather(){
       <main>
         <div className="current-weather">
           <div>
-            <h1 className="current-city">
-              Paris
-            </h1>
+            <h1 className="current-city">Paris</h1>
             <p className="current-details">
               <span></span>, moderate rain <br />
               Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
@@ -27,9 +25,7 @@ export default function Weather(){
           </div>
           <div className="current-temperature">
             <span className="current-temperature-icon">☀️</span>
-            <span className="current-temperature-value">
-              24
-            </span>
+            <span className="current-temperature-value">24</span>
             <span className="current-temperature-unit">°C</span>
           </div>
         </div>
@@ -37,27 +33,34 @@ export default function Weather(){
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/Olian741" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/Olian741"
+            target="_blank"
+            rel="noreferrer"
+          >
             {" "}
             Olian Mkhawana
           </a>{" "}
           and is
           <a
-            href="https://github.com/Olian741/my-Shecodes-weather-project" target="_blank" rel="noreferrer"
+            href="https://github.com/Olian741/my-Shecodes-weather-project"
+            target="_blank"
+            rel="noreferrer"
           >
             {" "}
             on GitHub
           </a>{" "}
           and
           <a
-            href="https://splendorous-taiyaki-eced19.netlify.app/"
-            target="_blank" rel="noreferrer"
+            href="https://celadon-froyo-bf6924.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
           >
             hosted on Netlify
           </a>
         </p>
       </footer>
-    </div>   
+    </div>;   
 
 
 }
