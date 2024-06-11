@@ -1,21 +1,24 @@
 import React, {useState} from "react";
 import "./weather.css";
 import axios from "axios";
+import Date from "./date";
+
 
 export default function Weather(props){
   const[weatherData, setWeatherData] = useState({ready : false});
    const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response){
-
+    
    setWeatherData({
     ready: true,
     temperature: response.data.main.temperature,
     wind: response.data.wind.speed,
     city: response.data.name,
-    date: "Wednesday 07:00",
+    date: response.data.name,
     description: response.data.weather[0].description,
     iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+  
    });
 
   }
@@ -42,10 +45,12 @@ export default function Weather(props){
           </div>
         </div>
       </form>
+  
       <h1>{weatherData.city}</h1>
       <ul>
-        <li>{weatherData.date}</li>
+        <li>  </li>
         <li className="text-capitalize">{weatherData.description}</li>
+        
       </ul>
       <div className="row mt-3">
         <div className="col-6">
