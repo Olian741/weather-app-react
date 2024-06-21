@@ -8,7 +8,7 @@ export default function App() {
     <div className="weather">
       <div className="container">
         <Weather defaultCity="New York" />
-        
+
         <footer>
           This project was coded by{" "}
           <a
@@ -18,14 +18,14 @@ export default function App() {
           >
             Olian Mkhawana
           </a>{" "}
-          and is{" "}
+          and is open-sourced{" "}
           <a
             href="https://github.com/Olian741/weather-app-react"
             target="_blank"
             rel="noreferrer"
           >
             {" "}
-            open-sourced on GitHub{" "}
+             on GitHub{" "}
           </a>
           and is hosted on
           <a
